@@ -24,6 +24,7 @@ function App() {
 
   const currentPath = pathname.slice(1);
   const CurrentComp = RouteMap[currentPath] ?? Default;
+
   return (
     <SidebarProvider>
       <AppSidebar currentPath={pathname} />
@@ -40,7 +41,7 @@ function App() {
           <ThemeToggle />
         </div>
         <Separator />
-        <div className="flex-1 p-5">
+        <div className="flex-1 p-8 py-6">
           <CurrentComp />
         </div>
       </div>

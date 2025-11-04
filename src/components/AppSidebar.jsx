@@ -1,7 +1,7 @@
 import { BookOpen, ChartPie, FolderClosed, ShoppingBag } from "lucide-react";
 
 import avatar from "@/assets/avatar.svg";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import {
   Sidebar,
   SidebarContent,
@@ -44,7 +44,6 @@ export function AppSidebar({ currentPath = window.location.pathname }) {
       <SidebarHeader className="flex-row gap-4 items-end">
         <Avatar>
           <AvatarImage src={avatar} />
-          <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <div>ByeWind</div>
       </SidebarHeader>
